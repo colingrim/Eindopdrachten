@@ -1,6 +1,5 @@
 <?php
     require_once('functions.php');
-    require_once('config.php');
 
     $dbSetup = array(
         "CREATE TABLE IF NOT EXISTS content_table(
@@ -13,8 +12,8 @@
         id INT(6) AUTO_INCREMENT NOT NULL,
         voornaam varchar(10) NOT NULL,
         achternaam varchar(20) NOT NULL,
-        geboortedatum, 
-        geslacht,
+        geboortedatum DATE  NOT NULL,
+        geslacht varchar(1) NOT NULL,
         gebruikersnaam varchar(20) NOT NULL,
         wachtwoord varchar(15) NOT NULL,
         PRIMARY KEY (`id`)

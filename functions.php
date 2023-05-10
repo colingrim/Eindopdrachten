@@ -1,8 +1,10 @@
 <?php
-    	    
-        connectDatabase(); 
 
-        function connectDatabase()
+    require_once('config.php'); 
+        
+    connectDatabase(); 
+
+    function connectDatabase()
     {
         global $oConnection;
         $oConnection = mysqli_connect(HOSTNAME, USERNAME, PASSWORD, DATABASE);
