@@ -1,6 +1,5 @@
 <?php
-    	require_once('config.php');
-    
+    	    
         connectDatabase(); 
 
         function connectDatabase()
@@ -19,7 +18,6 @@
     {
         global $oConnection;
         
-
         $result = mysqli_query($oConnection, $query);
 
         if(!empty(mysqli_error_list($oConnection)))
@@ -29,9 +27,10 @@
 
         if(strpos($query, 'SELECT') !== false)
         {
-            $result = $result->fetch_all();
+            $result = $result->fetch_all(MYSQLI_ASSOC);
         }
 
         return $result;
     }
+
 ?>
