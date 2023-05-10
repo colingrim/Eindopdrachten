@@ -12,7 +12,7 @@
 
     define( 'PASSWORD', '');
 
-    define( 'DATABASE', 'eindopdracht_p9_p10');
+    define( 'DATABASE', 'eindopdracht_p11');
 
 
 
