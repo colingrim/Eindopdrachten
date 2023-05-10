@@ -1,0 +1,63 @@
+html { 
+    background: url(images/HZVV1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  img.HZVV1 {
+      min-height: 100%;
+      min-width: 1024px;
+      max-width: 100%;
+      height: auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+  }
+  
+  body {
+      margin: 0;
+  }
+  
+  header {
+      display: flex;
+      justify-content: space-between;
+      background-color: red;
+  }
+  
+  .logo {
+      float: right;
+  }
+  
+  .navbar {       
+      overflow: hidden; 
+      background-color: red; 
+      width: 100%;
+  }
+  
+  .navbar a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 20px 20px;
+      text-decoration: none;
+      font-size: 20px;
+  }
+  
+  .navbar a:hover {
+      background-color: white;
+      color: black;
+  }
+  
+  
+  
+  footer {
+      position: fixed;
+      bottom:0; 
+      background-color: red; 
+      color: white; 
+      width: 100%; 
+      text-align: center; 
+      font-size: 20px;
+  }
